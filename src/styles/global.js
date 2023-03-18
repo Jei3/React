@@ -23,6 +23,7 @@ export default  createGlobalStyle`
 
     a {
         text-decoration: none;
+        
     }
 
     button, a {
@@ -33,4 +34,6 @@ export default  createGlobalStyle`
     button:hover, a:hover {
         filter: brightness(.9);
     }
+
+    
 `;

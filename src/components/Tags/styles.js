@@ -8,5 +8,4 @@ export const Container = styled.span`
     margin-right: 6px;
     color: #232129;
     background: #FF9000;
-
 `; 

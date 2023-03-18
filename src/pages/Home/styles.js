@@ -14,15 +14,63 @@ export  const Container  = styled.div`
     "newnote content";
 
     background: #312E38;
-        
+
 `;
 
-export  const Brand  = styled.div``;
+export  const Brand  = styled.div`
+    grid-area: brand;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-export  const Menu  = styled.ul``;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #3E3B47;
 
-export  const Search  = styled.ul``;
+    background-color: #232129;
 
-export  const Content  = styled.div``;
+    > h1 {
+        font-size: 24px;
+        color: #FF9000;
+    }
 
-export  const NewNotes = styled.button``;
+`;
+
+export  const Menu  = styled.ul`
+    grid-area: menu;
+    background-color: #232129;
+
+    padding-top: 64px;
+    text-align: center;
+
+    > li {
+        margin-bottom: 24px;
+    }
+`;
+
+export  const Search  = styled.ul`
+    grid-area: search;
+    padding: 64px 64px 0;
+`;
+
+export  const Content  = styled.div`
+    grid-area: content;
+    padding: 0 64px ;
+    overflow-y: auto;
+`;
+
+export  const NewNotes = styled.button`
+    grid-area: newnote;
+
+    background: #FF9000;
+    border: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > svg {
+        margin-right: 8px;
+    }
+`;
